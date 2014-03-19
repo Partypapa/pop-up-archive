@@ -6,6 +6,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require mousetrap
-//= require mousetrap/global
 //= require_tree .

@@ -347,7 +347,7 @@
                         '<a href="#" ng-click="enableEditor()"><i class="icon-pencil"></i></a></td>' +
                       '<td ng-show="editorEnabled"><input ng-model="editableTranscript" class="mousetrap" ng-show="editorEnabled"></td>' +
                       '<td ng-show="editorEnabled" style="width: 50px;">' +
-                        '<a href="#" ng-click="updateText(text)" class="mousetrap" style="width: 8px; float: left; padding: 0 8px">' + "<keybinding on='ctrl + s' invoke='updateText(text)' />" + 
+                        '<a href="#" ng-click="updateText(text)" class="mousetrap" style="width: 8px; float: left; padding: 0 8px">' +  
                           '<i class="icon-ok"></i></a>' +
                         '<a href="#" ng-click="disableEditor()" style="width: 8px; float: left; padding: 0 10px 0 8px">' +
                           '<i class="icon-remove"></i></a></td>' +
