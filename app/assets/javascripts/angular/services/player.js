@@ -382,7 +382,7 @@
           text.text = scope.editableTranscript;          
           scope.disableEditor();          
           scope.saveText({text: text});
-          alert("now we are updating");          
+          alert("now we are saving");          
         };
         Mousetrap.bindGlobal('return', function(text) {
             alert("test of binding");
