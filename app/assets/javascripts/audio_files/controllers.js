@@ -64,7 +64,10 @@ angular.module("Directory.audioFiles.controllers", ['ngPlayer'])
     }
 
     $scope.saveText = function(text) {
+      alert("we got to tt");
+
       var tt = new TimedText(text);
+
       tt.update();
     };
 
