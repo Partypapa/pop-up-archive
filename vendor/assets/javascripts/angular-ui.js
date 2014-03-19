@@ -644,17 +644,7 @@ angular.module('ui.directives').directive('uiKeyup', ['keypressHelper', function
           bindMapEvents(scope, mapEvents, map, elm);
         }
       };
-    }]);
-
-  app.directive('keybinding', function () {
-    return {
-        restrict: 'E',
-        scope: { invoke: '&' },
-        link: function (scope, el, attr) {
-            Mousetrap.bind(attr.on, scope.invoke);
-        }
-    };
-  });      
+    }]);     
 
   app.directive('uiMapInfoWindow',
     ['ui.config', '$parse', '$compile', function (uiConfig, $parse, $compile) {
