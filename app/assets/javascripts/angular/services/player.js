@@ -345,9 +345,9 @@
                       '<td ng-show="!editorEnabled"><a ng-click="seekTo(text.startTime)"><div class="file-transcript-text" ng-bind-html-unsafe="text.text"></div></a></td>' +
                       '<td ng-show="canShowEditor()" style="width: 8px; padding-right: 10px; text-align: right">'+
                         '<a href="#" ng-click="enableEditor()"><i class="icon-pencil"></i></a></td>' +
-                      '<td ng-show="editorEnabled"><input ng-model="editableTranscript" class="mousetrap" ng-show="editorEnabled"></td>' +
+                      '<td ng-show="editorEnabled"><input ng-model="editableTranscript" ng-show="editorEnabled"></td>' +
                       '<td ng-show="editorEnabled" style="width: 50px;">' +
-                        '<a href="#" ng-click="updateText(text)" class="mousetrap" style="width: 8px; float: left; padding: 0 8px">' +  
+                        '<a href="#" ng-click="updateText(text)" style="width: 8px; float: left; padding: 0 8px">' +
                           '<i class="icon-ok"></i></a>' +
                         '<a href="#" ng-click="disableEditor()" style="width: 8px; float: left; padding: 0 10px 0 8px">' +
                           '<i class="icon-remove"></i></a></td>' +
@@ -379,15 +379,11 @@
         }
 
         scope.updateText = function (text) {
-          text.text = scope.editableTranscript;          
-          scope.disableEditor();          
-          scope.saveText({text: text});
-          alert("now we are saving");          
+          text.text = this.editableTranscript;
+          this.disableEditor();
+          this.saveText({text: text});
         };
-        Mousetrap.bindGlobal('return', function(text) {
-            alert("test of binding");
-            scope.updateText(text);
-        });
+
         scope.toTimestamp = function (seconds) {
           var d = new Date(seconds * 1000);
           if (seconds > 3600) {
@@ -447,7 +443,3 @@
     }
   }]);
 })();
-
-
-
-
