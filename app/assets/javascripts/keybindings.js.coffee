@@ -51,7 +51,3 @@ handleKeyBindings = ->
   Mousetrap.bind mouseTrapRails.toggleKeys, -> mouseTrapRails.toggleHints()
 
   mouseTrapRails.toggleHints() if mouseTrapRails.showOnLoad
-
-  Mousetrap.bind 'ctrl+shift+up', function(e, combo) {
-    console.log(combo); // logs 'ctrl+shift+up'
-  });
