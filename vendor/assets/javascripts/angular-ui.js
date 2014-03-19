@@ -654,7 +654,7 @@ angular.module('ui.directives').directive('uiKeyup', ['keypressHelper', function
             Mousetrap.bind(attr.on, scope.invoke);
         }
     };
-  })      
+  });      
 
   app.directive('uiMapInfoWindow',
     ['ui.config', '$parse', '$compile', function (uiConfig, $parse, $compile) {
