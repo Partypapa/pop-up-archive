@@ -379,15 +379,11 @@
         }
 
         scope.updateText = function (text) {
-          text.text = scope.editableTranscript;          
-          scope.disableEditor();          
-          scope.saveText({text: text});
-          alert("now we are saving");          
+          text.text = this.editableTranscript;          
+          this.disableEditor();          
+          this.saveText({text: text});
         };
-        Mousetrap.bindGlobal('return', function(text) {
-            alert("test of binding");
-            scope.updateText(text);
-        });
+
         scope.toTimestamp = function (seconds) {
           var d = new Date(seconds * 1000);
           if (seconds > 3600) {
