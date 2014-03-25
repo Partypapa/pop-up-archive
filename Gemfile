@@ -82,8 +82,6 @@ gem 'amara', "~> 0.1.1"
 # gem 'amara', :path => '../amara'
 # gem 'amara', github: 'PRX/amara'
 #for supporting keyboard shortcuts
-gem 'mousetrap-rails'
-gem 'coffee-rails'
 gem 'countries'
 gem 'language_list'
 

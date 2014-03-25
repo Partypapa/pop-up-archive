@@ -345,9 +345,9 @@
                       '<td ng-show="!editorEnabled"><a ng-click="seekTo(text.startTime)"><div class="file-transcript-text" ng-bind-html-unsafe="text.text"></div></a></td>' +
                       '<td ng-show="canShowEditor()" style="width: 8px; padding-right: 10px; text-align: right">'+
                         '<a href="#" ng-click="enableEditor()"><i class="icon-pencil"></i></a></td>' +
-                      '<td ng-show="editorEnabled"><input ng-model="editableTranscript" ng-enter="updateText(text)" class="mousetrap" ng-show="editorEnabled"></td>' +
+                      '<td ng-show="editorEnabled"><input ng-model="editableTranscript" ng-enter="updateText(text)" ng-show="editorEnabled"></td>' +
                       '<td ng-show="editorEnabled" style="width: 50px;">' +
-                        '<a href="#" ng-click="updateText(text)" ng-enter="updateText(text)" class="mousetrap" style="width: 8px; float: left; padding: 0 8px">' +  
+                        '<a href="#" ng-click="updateText(text)" ng-enter="updateText(text)" style="width: 8px; float: left; padding: 0 8px">' +  
                           '<i class="icon-ok"></i></a>' +
                         '<a href="#" ng-click="disableEditor()" style="width: 8px; float: left; padding: 0 10px 0 8px">' +
                           '<i class="icon-remove"></i></a></td>' +
