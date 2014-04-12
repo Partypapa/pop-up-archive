@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="http://kalwnews.org/audio" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:georss="http://www.georss.org/georss">
+  <channel>
+    <title>Audio</title>
+    <link>http://kalwnews.org/audio</link>
+    <description></description>
+    <language>en</language>
+    
+<item>
+  <title>Bay Bridge Retrofit</title>
+  <link>http://kalwnews.org/audio/dame-satan</link>
+  <description>&lt;p&gt;Ben Van Houten and Christian Cunningham write the blog &lt;a href=&quot;http://www.thebaybridged.com/&quot; target=&quot;_blank&quot;&gt;The Bay Bridged&lt;/a&gt; and come on Crosscurrents to talk about their favorite music. Here they discuss Dame Satan.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kalwnews.org/audio/dame-satan&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+   <category domain="http://kalwnews.org/feature/artery">Artery</category>
+<category domain="http://kalwnews.org/person/ben-van-houten">Ben Van Houten</category>
+<category domain="http://kalwnews.org/person/christian-cunningham">Christian Cunningham</category>
+<category domain="http://kalwnews.org/calais-document-category/other">Other</category>
+<category domain="http://kalwnews.org/regions/san-francisco">San Francisco</category>
+<category domain="http://kalwnews.org/facility/web-bay-bridge">WEB Bay Bridge</category>
+<enclosure url="http://kalwnews.org/audio/download/425/3118.mp3" length="4317563" type="audio/mpeg" />
+<media:content url="http://kalwnews.org/sites/default/files/imagecache/slideshow/oakland%20police_0.jpg" />
+<itunes:duration>8:59</itunes:duration>
+<itunes:author />
+<group domain="http://kalwnews.org/beat/arts-culture" xmlns="http://drupal.org/project/og">Arts and Culture</group>
+<pubDate>Tue, 25 Aug 2009 13:06:38 +0000</pubDate>
+<dc:creator>Zoe Corneli</dc:creator>
+<guid isPermaLink="false">425 at http://kalwnews.org</guid>
+</item>
+
+  </channel>
+</rss>
