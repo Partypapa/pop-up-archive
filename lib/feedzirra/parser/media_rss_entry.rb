@@ -13,10 +13,9 @@ module Feedzirra
       element :author, :as => :author
       element :"content:encoded", :as => :content
       element :description, :as => :summary
-
-      element :"media:content", :as => :image, :value => :url
-      element :enclosure, :as => :image, :value => :url
-      
+  
+      # element :"media:content", :as => :image, :value => :url
+      element :"itunes:image", :as => :image, :value => :href
       element :pubDate, :as => :published
       element :pubdate, :as => :published
       element :"dc:date", :as => :published
@@ -49,7 +48,8 @@ module Feedzirra
 
       element :"media:hash", :as => :media_hash_md5, :with => { :algo => 'md5' }
       element :"media:hash", :as => :media_hash_sha1, :with => { :algo => 'sha1' }
-
+      
+      puts "********************************************************"
     end
 
   end
