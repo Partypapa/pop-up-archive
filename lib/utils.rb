@@ -82,8 +82,8 @@ class Utils
     end
 
 
-    def is_audio_file?(url)
-      #puts "is_audio_file? url:#{url}"
+    def is_image_file?(url)
+      #puts "is_image_file? url:#{url}"
       begin
         uri = URI.parse(url)
         ext = (File.extname(uri.path)[1..-1] || "").downcase
