@@ -47,8 +47,8 @@ class ImageFile < ActiveRecord::Base
     copy_to_item_storage    
     # logger.debug "Tasks::UploadTask: after_tr       
   end
-
+  
   def storage_id 
     storage.id
-  end  
+  end        
 end
