@@ -41,9 +41,10 @@ class ImageFile < ActiveRecord::Base
     save_thumb_version    
     upload_id = upload_to.id
     update_file!(file_name, upload_id)
+    save_thumb_version    
     # now copy it to the right place if it needs to be (e.g. s3 -> ia)
     # or if it is in the right spot, process it!
-    copy_to_item_storage
+    copy_to_item_storage    
     # logger.debug "Tasks::UploadTask: after_tr       
   end
 
