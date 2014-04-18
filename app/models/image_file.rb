@@ -38,12 +38,12 @@ class ImageFile < ActiveRecord::Base
    
   def file_uploaded(file_name)
     update_attributes(:is_uploaded => true, :file => file_name)
+    save_thumb_version    
     upload_id = upload_to.id
     update_file!(file_name, upload_id)
     # now copy it to the right place if it needs to be (e.g. s3 -> ia)
     # or if it is in the right spot, process it!
     copy_to_item_storage
-    save_thumb_version
     # logger.debug "Tasks::UploadTask: after_tr       
   end
 
